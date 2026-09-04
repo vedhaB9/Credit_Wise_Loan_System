@@ -74,8 +74,8 @@ log_model.fit(X_train_scaled,y_train)
 y_pred=log_model.predict(X_test_scaled)
 
 print("precision score: ",precision_score(y_test,y_pred))
-print("accuracy score: ",precision_score(y_test,y_pred))
-print("recall score: ",precision_score(y_test,y_pred))
+print("accuracy score: ",accuracy_score(y_test,y_pred))
+print("recall score: ",recall_score(y_test,y_pred))
 
 
 
