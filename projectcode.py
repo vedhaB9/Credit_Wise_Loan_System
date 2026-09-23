@@ -9,8 +9,8 @@ import seaborn as sns
 
 loan=pd.read_csv("loan_approval_data.csv")
 loan=loan.drop(columns='Gender')
-#print(loan.isnull().sum())
-#print(loan.info())
+print(loan.isnull().sum())
+print(loan.info())
 
 
 categorial_cols=loan.select_dtypes(include=['str']).columns
