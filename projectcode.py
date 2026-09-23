@@ -22,7 +22,7 @@ loan[num_cols]=num_imp.fit_transform(loan[num_cols])
 loan[categorial_cols]=cat_imp.fit_transform(loan[categorial_cols])
 
 #EDA
-'''classes=loan['Loan_Approved'].value_counts()
+classes=loan['Loan_Approved'].value_counts()
 plt.style.use('dark_background')
 plt.pie(classes,autopct='%1.1f%%',labels=['no','yes'])
 plt.show()
@@ -30,7 +30,7 @@ loanpurposes=loan['Loan_Purpose'].value_counts()
 plt.bar(loanpurposes.index,loanpurposes.values)
 plt.title('purpose of loans')
 plt.show()
-'''
+
                                             #   FEATURE ENCODING
 
 pd.set_option('display.max_columns', None)
